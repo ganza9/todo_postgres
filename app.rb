@@ -8,6 +8,8 @@ require("pg")
 DB = PG.connect({:dbname => "to_do_test"})
 
 get("/")do
+  @name = params.fetch("name")
+  @list = List.find(params.fetch("id").to_i())
   erb(:index)
 end
 
