@@ -1,0 +1,19 @@
+<div class="container">
+<h2>Contact Info:</h2>
+  <p> <b> First Name : </b><%= @contact.first_name %> </p>
+  <p>  <b> Last Name : </b><%= @contact.last_name %> </p>
+  <p>  <b> Job Title : </b><%= @contact.job_title %> </p>
+  <p>  <b> Company : </b><%= @contact.company %> </p>
+  <p>  <b> Contact Type : </b><%= @contact.type %> </p>
+  <p>  <b> Street Address : </b><%= @contact.street_address %> </p>
+  <p>  <b> City : </b><%= @contact.city %> </p>
+  <p>  <b> State : </b><%= @contact.state %> </p>
+  <p>  <b> Zip : </b><%= @contact.zip %> </p>
+  <br>
+  <form action="/" method="post">
+    <label for="phone_number">Add Phone Number:</label>
+    <input type="text" name="phone_number" id="phone_number">
+  </form>
+  <br>
+  <a href="/">Return to home</a>
+</div>
